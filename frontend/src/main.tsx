@@ -11,6 +11,7 @@ import RootLayout from "./layout/RootLayout.tsx";
 import Home from "./pages/Home.tsx";
 import OnlyPublicRoutes from "./utilities/router/OnlyPublicRoutes.tsx";
 import Signin from "./pages/Signin.tsx";
+import Register from "./pages/Register.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
 
       <Route path="/user" element={<OnlyPublicRoutes fallbackUrl="/" />}>
         <Route path="signin" element={<Signin />} />
+        <Route path="register" element={<Register />} />
       </Route>
     </Route>
   )
