@@ -1,8 +1,10 @@
-![Project Logo](https://firebasestorage.googleapis.com/v0/b/host-media-862d8.appspot.com/o/WhatsApp%20Image%202024-05-22%20at%202.07.20%20PM.jpeg?alt=media&token=388a8f09-a80c-454d-b5aa-11585d419424)
-
-# Group 02 - Web Application for Demonstrating SQL Triggers - Project (ADBMS)
+# Group 04 - Web Application for Demonstrating SQL Triggers - Project (ADBMS)
 
 ### CS3122 Advanced Database Management Systems (2019/2020)
+
+![Home Screen](https://firebasestorage.googleapis.com/v0/b/host-media-862d8.appspot.com/o/screen_c.jpeg?alt=media&token=f72eb4d7-6d02-481f-ad03-cded0326efe8)
+
+![Register Screen](https://firebasestorage.googleapis.com/v0/b/host-media-862d8.appspot.com/o/screen_c_1.jpeg?alt=media&token=d46d9a57-812e-4c69-bd72-601044a23e78)
 
 ## Table of Contents
 
@@ -232,6 +234,18 @@ git clone https://github.com/Dhuvii/authentication.git
 
 ```
 
+## Triggers
+
+We have configured these triggers manually in mysql console.
+
+### Triggers when user gets updated
+
+![Update After](https://firebasestorage.googleapis.com/v0/b/host-media-862d8.appspot.com/o/update_c.jpeg?alt=media&token=ec4d2d57-4012-4e76-8d71-4c0e75281a30)
+
+### Triggers when a new user gets inserted
+
+![Insert After](https://firebasestorage.googleapis.com/v0/b/host-media-862d8.appspot.com/o/insert_c.jpeg?alt=media&token=d7dc5519-1aa5-4723-aae5-832b6dfe523f)
+
 ## Contributing
 
 This is a group project for the Advanced Database Management Systems course. The group members are as follows:
@@ -243,7 +257,6 @@ This is a group project for the Advanced Database Management Systems course. The
 - **Dilakshan Thiyagaraja** - EUSL TC IS 2019 COM 56
 - **Sabesh Wilson** - EUSL TC IS 2019 COM 82
 - **Nilupul Tharanga** - EUSL TC IS 2019 COM 78
-- **Mithushan (Marandhuten)** - EUSL TC IS 2019 COM (??)
 
 If you would like to contribute to this project, please follow these guidelines:
 
