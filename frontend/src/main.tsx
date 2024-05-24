@@ -9,11 +9,17 @@ import {
 import "./index.css";
 import RootLayout from "./layout/RootLayout.tsx";
 import Home from "./pages/Home.tsx";
+import OnlyPublicRoutes from "./utilities/router/OnlyPublicRoutes.tsx";
+import Signin from "./pages/Signin.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
+
+      <Route path="/user" element={<OnlyPublicRoutes fallbackUrl="/" />}>
+        <Route path="signin" element={<Signin />} />
+      </Route>
     </Route>
   )
 );
