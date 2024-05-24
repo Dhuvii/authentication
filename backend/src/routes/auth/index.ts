@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken';
 import { sendEmail } from '../../../configs/nodemailer.config';
 import protectedRoute from '../../middlewares/protectedRoute';
 import { createUser, getUser, updateUser } from './auth.service';
+import { getLogs } from './log.service';
 
 const router = express.Router();
 
@@ -32,6 +33,33 @@ router.get('/whoami', protectedRoute, async (req: express.Request, res: express.
     return res.status(200).json({
       message: 'User fetched',
       data: user,
+    });
+  } catch (error) {
+    console.log({ error });
+    res.status(500).json({
+      message: 'Server error',
+    });
+  }
+});
+
+router.get('/logs', protectedRoute, async (req: express.Request, res: express.Response) => {
+  try {
+    //@ts-ignore
+    const id = req.userid;
+    const logs = await getLogs({
+      where: {
+        userId: id,
+      },
+      select: {
+        loggedAt: true,
+      },
+      orderBy: {
+        loggedAt: 'desc',
+      },
+    });
+    return res.status(200).json({
+      message: 'Logs fetched',
+      data: logs,
     });
   } catch (error) {
     console.log({ error });
