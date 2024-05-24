@@ -12,11 +12,14 @@ import Home from "./pages/Home.tsx";
 import OnlyPublicRoutes from "./utilities/router/OnlyPublicRoutes.tsx";
 import Signin from "./pages/Signin.tsx";
 import Register from "./pages/Register.tsx";
+import PrivateRoutes from "./utilities/router/PrivateRoute.tsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
-      <Route index element={<Home />} />
+      <Route path="/" element={<PrivateRoutes fallbackUrl="user/signin" />}>
+        <Route index element={<Home />} />
+      </Route>
 
       <Route path="/user" element={<OnlyPublicRoutes fallbackUrl="/" />}>
         <Route path="signin" element={<Signin />} />
