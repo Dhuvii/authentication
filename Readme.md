@@ -255,8 +255,9 @@ This is a group project for the Advanced Database Management Systems course. The
 - **Thuvaragan Parameshwaran** - EUSL TC IS 2019 COM 13
 - **Aathil Ihlaas** - EUSL TC IS 2019 COM 45
 - **Dilakshan Thiyagaraja** - EUSL TC IS 2019 COM 56
-- **Sabesh Wilson** - EUSL TC IS 2019 COM 82
 - **Nilupul Tharanga** - EUSL TC IS 2019 COM 78
+- **Sabesh Wilson** - EUSL TC IS 2019 COM 82
+- **Mithushan Kirubakaran** - EUSL TC IS 2019 COM 98
 
 If you would like to contribute to this project, please follow these guidelines:
 
