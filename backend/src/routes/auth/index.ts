@@ -44,7 +44,7 @@ router.get('/whoami', protectedRoute, async (req: express.Request, res: express.
 
 router.get('/logs', protectedRoute, async (req: express.Request, res: express.Response) => {
   try {
-    //@ts-ignore
+    //@ts-ignore -> As the middleware adds userid field to the header, the Request interface is not aware of this, hence this type error.
     const id = req.userid;
     const logs = await getLogs({
       where: {
