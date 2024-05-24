@@ -92,7 +92,7 @@ const Register = () => {
                         <h3 className="text-2xl font-medium text-gray-800">
                           Secure Login
                         </h3>
-                        <p className="text-xs text-gray-600">By Group 02</p>
+                        <p className="text-xs text-gray-600">By Group 04</p>
                       </div>
                     </div>
 
