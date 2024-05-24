@@ -3,6 +3,21 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        "spin-circle": {
+          "0%": {
+            transform:
+              "rotate(0deg) translateX(var(--spin-radius, 100px)) rotate(0deg)",
+          },
+          "100%": {
+            transform:
+              "rotate(360deg) translateX(var(--spin-radius, 100px)) rotate(-360deg)",
+          },
+        },
+      },
+      animation: {
+        "spin-circle": "spin-circle var(--spin-duration, 4s) linear infinite",
+      },
       textColor: {
         skin: {
           primary: "rgba(var(--primary-bg), <alpha-value>)",
